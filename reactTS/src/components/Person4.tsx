@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import {FC} from 'react'
+import {FC, createContext} from 'react'
 
- export enum HairColor{
+const AppContext = createContext(null)
+
+export enum HairColor{
     Blonde = "Your Hair id blonde",
     Brown = "carramel latte",
     Pink = "great color"
@@ -12,7 +14,7 @@ interface Props {
     age : number,
     email : string,
     getName? : (name: string) => string  //Now this is prpertru is optional to pass,
-    hairColor : HairColor
+    hairColor? : HairColor
 
 }   
 

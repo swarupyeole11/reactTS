@@ -10,7 +10,7 @@
 # What are the changes the 
 
 ## Change 1 : The way you access the props
-interface Props {
+   interface Props {
     name : string,
     age : number,
     email : string,
